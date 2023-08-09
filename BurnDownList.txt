@@ -1,0 +1,54 @@
+TEAM #5 BURNDOWN LIST
+
+COMPLETED ITEMS:
+- Collect data source (switrs.sqlite file).
+- Extract data into observable dataframes using PANDAS.
+- Clean data and replace null values.
+- Include tools to normalize numerical columns.
+- Observe dataframe statistics after cleaning.
+
+
+OUTSTANDING ACTION-LIST ITEMS (AKA "BURNDOWN LIST"):
+
+1.) Identify coorelated attribute columns in each table using PCA. Note that some progress has been made on this item, but the results are not yet complete
+	-Tutorial Source(s): https://www.projectpro.io/recipes/extract-features-using-pca-in-python    https://www.datacamp.com/tutorial/principal-component-analysis-in-python
+			     https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html
+	-Python Libaries in Use: PANDAS, sklearn, matplotlib
+	-Perform correlation-coefficient or covariance-based numerical PCA on the training sets for 'collisions', 'parties', and 'victims' tables (see examples + page 96 of text).
+	-Perform a Chi-squared analysis (i.e., contingency tables) for the nominal attribute columns of 'collisions', 'parties', and 'victims' training sets (see page 94 of text).
+	-Generate conclusions and/or query modifications based on the evidence presented by correlation-coefficient/covariance/Chi-squared based PCA and the info-vis graphics generated.
+
+	-NOTE: Both of these methods require detail-oriented dtype manipulation of floats, integers, strings (currently called "objects"), as well as 1D and 2D array manipulation to fit the data into the available tools. Please see the most recent efforts on PCA to learn more. 
+		
+
+2.) Constructing DATA CUBES to observe temporal and spatial trends in important traffic statistics 
+	-Tutorial Source: https://adwiteeya.medium.com/data-cube-57f74ab704ba
+	-Python Libaries in Use: 
+	-Data Cube Examples: PANDAS
+		-"collision-related deaths vs time or location"
+		-"collision_severity outcome totals vs time or location"
+		-"leading primary collision factor vs. time or location"
+	-Generate conclusions based on the evidence provided by info-vis tools and the constructed data cube set. 
+
+	-NOTE: This method requires aggregation methods for time and/or location attributes, as well "count()" queries to present the aggregated cell counts at the appropriate abstraction. 
+
+
+3.) Construct a Decision Tree Classifier
+	-Tutorial Source: 
+	-Python Libraries in Use: 
+
+
+4.) Classification and Rule Generation Using Bayesian Belief Networks (BBN) to predict collision outcomes (any that interest us) based on attribute vectors of mixed nominal/numerical type.
+	-tutorial Source: https://www.edureka.co/blog/bayesian-networks/
+	-Python Libaries in Use: 
+	-This method will require an accurate compilation of statistics to SYSTEMATICALLY generate the joint-probabilities required for the BBN classifier.
+
+
+5.) Construct an Frequent Pattern Tree (FPT) classifier and use it to label frequent itemsets in the 'collisions', 'parties', and 'victims' tables.
+	-Tutorial Source: 
+	-Python Libaries in Use: 
+	-Observe the classifier outcomes and generate data  
+	-
+
+
+6.) Write the report, construct a presentation video, wrap up the project deliverables.
