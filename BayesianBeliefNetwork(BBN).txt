@@ -1,0 +1,22 @@
+## This is just a placeholder, file will be deleted. 
+
+from pgmpy.models import BayesianNetwork
+from pgmpy.estimators import MaximumLikelihoodEstimator
+
+
+# Define the structure 
+model = BayesianNetwork([('Weather', 'Accident'), ('RoadCondition', 'Accident'), ('TimeOfDay', 'Accident')])
+
+# Learn CPDs 
+model.fit(data, estimator=MaximumLikelihoodEstimator)
+
+# Verify the model
+assert model.check_model()
+
+# Perform inference
+from pgmpy.inference import VariableElimination
+inference = VariableElimination(model)
+
+# Query (example: probability of Accident given Weather = 'Rainy')
+result = inference.query(variables=['Accident'], evidence={'Weather': 'Rainy'})
+print(result)
