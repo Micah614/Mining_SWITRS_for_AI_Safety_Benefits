@@ -28,6 +28,6 @@ Bayesian Belief Network (BBN Classification)
 
 https://youtu.be/bJS5zSeln4o
 
-○ Link to your final project paper 
+○ Link to the final project paper 
 
 https://docs.google.com/document/d/1ZHrW38xtCeuFty4gE0WjdrLex0CWOfn4ZbJmrUtb5gg/edit
