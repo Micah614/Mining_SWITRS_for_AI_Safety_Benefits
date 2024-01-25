@@ -1,5 +1,4 @@
-# Data_Mining_Project
-"Mining the SWITRS Driver Database to Evaluate Potential Safety Benefits of AI-Corrected and Autonomous Vehicles" 
+# "Mining the SWITRS Driver Database to Evaluate Potential Safety Benefits of AI-Corrected and Autonomous Vehicles" 
 Data Mining Project with Contributers Nolan Ollada, Nathan Palmer, and Micah Simmerman
 
 Download the 2GB compressed SQLite database file located at this URL https://www.kaggle.com/datasets/alexgude/california-traffic-collision-data-from-switrs. 
